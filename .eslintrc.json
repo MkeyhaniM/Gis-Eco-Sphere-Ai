@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals","prettier"],
+  "plugins": ["next/core-web-vitals","prettier"],
+  "settings": {
+    "next": {
+      "rootDir": "packages/my-app/"
+    }
+  }
 }
