@@ -1,33 +1,37 @@
 {
-  "name": "gis-eco-sphere-ai",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky"
-  },
-  "dependencies": {
-    "@next/eslint-plugin-next": "^14.2.5",
-    "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5",
-    "eslint-config-prettier": "^9.1.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  }
+    "name": "gis-eco-sphere-ai",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prepare": "husky",
+        "prettier": "npx prettier . --check"
+    },
+    "dependencies": {
+        "eslint-plugin-react": "^7.35.0",
+        "lint-staged": "^15.2.7",
+        "mapbox-gl": "^3.5.2",
+        "next": "14.2.5",
+        "react": "^18",
+        "react-dom": "^18"
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.3.0",
+        "@commitlint/config-conventional": "^19.2.2",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.5",
+        "postcss": "^8",
+        "prettier": "3.3.3",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    }
 }
